@@ -376,3 +376,12 @@ width: 70%;
     padding: 20px;
     align-items: center;
 }
+
+
+.crptoStats{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    padding: 15px;
+}
