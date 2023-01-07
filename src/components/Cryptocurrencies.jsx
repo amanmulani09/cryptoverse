@@ -12,7 +12,7 @@ console.log(cryptos)
   return (
     <>
     <Row gutter={[32,32]} className="crypto-card-container">
- { cryptos && cryptos.map((currency)=>(
+ { cryptos ?  cryptos.map((currency)=>(
   <Col xs={24} sm={12} ig={6} key={currency.id} className="crypto-card">
 <Link to={`/crypto/${currency.id}`}>
   <Card title={`${currency.rank}.${currency.name}`} extra={<img className='crypto-image' src={currency.iconUrl} />} hoverable>
@@ -23,7 +23,7 @@ console.log(cryptos)
   </Card>
 </Link> 
   </Col>
- ))}
+ )): 'loading...'}
     </Row>
     </>
   )
