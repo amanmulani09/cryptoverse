@@ -1,7 +1,5 @@
 import React from 'react'
-import { Line } from 'react-chartjs-2'
 import {Col,Row,Typography} from 'antd'
-import { type } from '@testing-library/user-event/dist/type'
 const {Title} = Typography
 const LineChart = ({coinName,coinHistory,currentPrice}) => {
     console.log(coinHistory,coinName)
@@ -57,7 +55,7 @@ const LineChart = ({coinName,coinHistory,currentPrice}) => {
             </Title>
         </Col>
     </Row>
-    <Line data={data} options={options} />
+    {/* <Line data={data} options={options} /> */}
     </>
   )
 }

@@ -6,15 +6,14 @@ import LineChart from './LineChart';
 import {Col,Row,Typography,Select} from 'antd'
 import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCircleOutlined, StopOutlined, TrophyOutlined, CheckOutlined, NumberOutlined, ThunderboltOutlined } from '@ant-design/icons';
 import { useGetCryptoDetailsQuery, useGetCryptoHistoryQuery } from '../services/cryptoApi';
-import { Line } from 'react-chartjs-2';
 
-const {Title,Text} = Typography;
+const {Title,Text} = Typography; 
 const {Option} = Select;
 const Cryptodetails = () => {
   const [timePeriod,setTimePeriod] = useState('7d')
   const {coinId} = useParams();
   console.log(coinId)
-  const {data,isFeatching} = useGetCryptoDetailsQuery('Qwsogvtv82FCd')
+  const {data} = useGetCryptoDetailsQuery('Qwsogvtv82FCd')
   const {data:coinHistory} = useGetCryptoHistoryQuery({coinId:'Qwsogvtv82FCd',timePeriod})
   
   const cryptoDetails = data?.data?.coin;
