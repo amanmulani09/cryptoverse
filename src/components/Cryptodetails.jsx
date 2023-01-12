@@ -13,8 +13,8 @@ const Cryptodetails = () => {
   const [timePeriod,setTimePeriod] = useState('7d')
   const {coinId} = useParams();
   console.log(coinId)
-  const {data} = useGetCryptoDetailsQuery('Qwsogvtv82FCd')
-  const {data:coinHistory} = useGetCryptoHistoryQuery({coinId:'Qwsogvtv82FCd',timePeriod})
+  const {data} = useGetCryptoDetailsQuery(coinId)
+  const {data:coinHistory} = useGetCryptoHistoryQuery({coinId: coinId,timePeriod})
   
   const cryptoDetails = data?.data?.coin;
   console.log(cryptoDetails)

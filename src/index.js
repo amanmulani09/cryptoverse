@@ -7,12 +7,12 @@ import store from './app/store';
 import { ValueContext } from './app/ValueContext';
 
 ReactDOM.render(
+    <BrowserRouter>
     <ValueContext>
 
-    <BrowserRouter>
     <Provider store={store}>
 <App/>
     </Provider>
-    </BrowserRouter>
     </ValueContext>
+    </BrowserRouter>
 ,document.getElementById('root'));
