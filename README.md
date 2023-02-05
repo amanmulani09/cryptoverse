@@ -1,6 +1,5 @@
-Cryptoverse is a Single page application built using 
-ReactJS,
-Redux-toolkit,
-Ant-Design,
-Chart.js
+
+CryptoVerse is a highly scalable, low-cost, and high performant chat application built on React and Redux-toolkit leveraging for real-time info regarding the cryptocurrencies.
+
+live demo: crytoverselatest.netlify.app/news
 
