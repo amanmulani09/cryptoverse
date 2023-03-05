@@ -7,7 +7,6 @@ Features: 🚀
 ▪︎ See detailed information about any cryptocurency
 ▪︎ get real time data price | data | marketcap of any cryptocurrency.
 ▪︎ read latest trending news about the specific cryptocurrency.
-
 ▪︎Fully responsive
 
 Tech Stacks: ReactJS, Redux-toolkit, and useReducer, React Router, And-Design. 
